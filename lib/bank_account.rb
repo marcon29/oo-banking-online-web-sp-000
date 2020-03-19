@@ -9,19 +9,19 @@ class BankAccount
   end
 
   def deposit(amount)
-    self.balance += amount
+    balance += amount
   end
 
   def withdrawl(amount)
-    self.balance -= amount
+    balance -= amount
   end
 
   def display_balance
-    "Your balance is $#{self.balance}."
+    "Your balance is $#{balance}."
   end
 
   def valid?
-    self.balance > 0 && self.status == "open"
+    balance > 0 && self.status == "open"
   end
 
   def close_account
